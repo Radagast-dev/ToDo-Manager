@@ -5,18 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToDo_Manager"
         mc:Ignorable="d"
-        Title="To Do App - Login" Height="295" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="DarkGray" Icon="C:\Users\xx\source\repos\ToDo Manager\ToDo Manager\ressources\game-icon.png">
+        Title="To Do App - Login" Height="295" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/ressources/game-icon.png">
     <Grid>
         <Grid.Background>
             <RadialGradientBrush>
                 <GradientStop Color="Black" Offset="0.1"/>
-                <GradientStop Color="Red" Offset="1.2"/>
+                <GradientStop Color="ForestGreen" Offset="1.2"/>
             </RadialGradientBrush>
         </Grid.Background>
 
-                <Image x:Name="HoI_IV_Icon" Margin="47,10,47,13" Source="/ressources/game-icon.png" Stretch="Fill" Visibility="Hidden"/>
-        <PasswordBox x:Name="pwBox" HorizontalAlignment="Center" Margin="0,111,0,0" VerticalAlignment="Top" Width="132" Height="23" Background="Red" Opacity="0.5"/>
-        <Label x:Name="pwLabel" Content="Enter Password" Foreground="AntiqueWhite" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top"  Width="90" Height="27"/>
-        <Button x:Name="loginEnterButton" Content="Enter" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Click="Button_Click" Width="58" Opacity="0.75"/>
+        <Image x:Name="HoI_IV_Icon" Margin="47,10,47,13" Source="/ressources/game-icon.png" Stretch="Fill" Visibility="Hidden"/>
+        <PasswordBox x:Name="pwBox" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Width="132" Height="23" Background="DarkSeaGreen" Opacity="0.5"/>
+        <Label x:Name="pwLabel" Content="Enter Password" Foreground="AntiqueWhite" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top"  Width="90" Height="27"/>
+        <Button x:Name="loginEnterButton" Content="Enter" HorizontalAlignment="Center" Margin="0,128,0,0" VerticalAlignment="Top" Click="Button_Click" Width="58" Opacity="0.75"/>
+        <Button x:Name="registerbutton" Content="Register" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Click="registerbutton_Click" Width="58" Opacity="0.75"/>
+        <Rectangle Stroke="Black" Margin="80,31,80,78" RadiusX="20" RadiusY="20"/>
     </Grid>
 </Window>

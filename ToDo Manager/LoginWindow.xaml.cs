@@ -25,9 +25,11 @@ namespace ToDo_Manager
             InitializeComponent();
         }
 
+        private string testPW = "Seba";
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (pwBox.Password == "Seba")
+            if (pwBox.Password == testPW) //implement db connection and account management
             {
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
@@ -37,6 +39,11 @@ namespace ToDo_Manager
             {
                 MessageBox.Show("Wrong Password!");
             }
+        }
+
+        private void registerbutton_Click(object sender, RoutedEventArgs e)
+        {
+            //db connection and account mngmt
         }
     }
 }
