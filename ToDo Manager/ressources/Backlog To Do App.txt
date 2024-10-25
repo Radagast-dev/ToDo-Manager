@@ -13,3 +13,4 @@ Markieren von Completed Tasks und Entfernung aus der View der laufenden
 Dauerhafte Sicherung aller Eingaben welche als Task gespeichert wurden,
 mit Ausnahme einer "Dauerhaft löschen Abfrage"
 Kategorisierung von Tasks in Critical, Important, Non-Critical und Minor
+Account management gekoppelt mit DB

@@ -14,11 +14,11 @@
             </RadialGradientBrush>
         </Grid.Background>
 
-        <Image x:Name="HoI_IV_Icon" Margin="47,10,47,13" Source="/ressources/game-icon.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="hoI_IV_Icon" Margin="47,10,47,13" Source="/ressources/game-icon.png" Stretch="Fill" Visibility="Hidden"/>
         <PasswordBox x:Name="pwBox" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Width="132" Height="23" Background="DarkSeaGreen" Opacity="0.5"/>
         <Label x:Name="pwLabel" Content="Enter Password" Foreground="AntiqueWhite" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top"  Width="90" Height="27"/>
         <Button x:Name="loginEnterButton" Content="Enter" HorizontalAlignment="Center" Margin="0,128,0,0" VerticalAlignment="Top" Click="Button_Click" Width="58" Opacity="0.75"/>
         <Button x:Name="registerbutton" Content="Register" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" Click="registerbutton_Click" Width="58" Opacity="0.75"/>
-        <Rectangle Stroke="Black" Margin="80,31,80,78" RadiusX="20" RadiusY="20"/>
+        <Rectangle x:Name="enterRect" Stroke="Black" Margin="80,31,80,78" RadiusX="20" RadiusY="20"/>
     </Grid>
 </Window>
