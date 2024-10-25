@@ -1,0 +1,22 @@
+﻿<Window x:Class="ToDo_Manager.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDo_Manager"
+        mc:Ignorable="d"
+        Title="To Do App - Login" Height="295" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="DarkGray" Icon="C:\Users\xx\source\repos\ToDo Manager\ToDo Manager\ressources\game-icon.png">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="Black" Offset="0.1"/>
+                <GradientStop Color="Red" Offset="1.2"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+
+                <Image x:Name="HoI_IV_Icon" Margin="47,10,47,13" Source="/ressources/game-icon.png" Stretch="Fill" Visibility="Hidden"/>
+        <PasswordBox x:Name="pwBox" HorizontalAlignment="Center" Margin="0,111,0,0" VerticalAlignment="Top" Width="132" Height="23" Background="Red" Opacity="0.5"/>
+        <Label x:Name="pwLabel" Content="Enter Password" Foreground="AntiqueWhite" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top"  Width="90" Height="27"/>
+        <Button x:Name="loginEnterButton" Content="Enter" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Click="Button_Click" Width="58" Opacity="0.75"/>
+    </Grid>
+</Window>

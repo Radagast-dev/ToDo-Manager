@@ -1,0 +1,15 @@
+Backlog To Do App
+
+
+Funktionen
+
+Account Management, Datenbankgestützt, Möglichkeiten für Online Zugriff?
+
+Eingabe von To Dos
+Auslesen von To Dos
+Suche von To Dos
+Notifications von To Dos an einem spezifischen Zeitpunkt
+Markieren von Completed Tasks und Entfernung aus der View der laufenden
+Dauerhafte Sicherung aller Eingaben welche als Task gespeichert wurden,
+mit Ausnahme einer "Dauerhaft löschen Abfrage"
+Kategorisierung von Tasks in Critical, Important, Non-Critical und Minor
