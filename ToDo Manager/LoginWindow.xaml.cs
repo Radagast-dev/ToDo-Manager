@@ -27,47 +27,46 @@ namespace ToDo_Manager
 
         private string testPW = "Seba";
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             if (pwBox.Password == testPW) //implement db connection and account management
             {
-
-                ImageBrush backGroundBrush = new ImageBrush();
-
-                BitmapImage image = new BitmapImage();
-                image.BeginInit();
-                image.UriSource = new Uri("C:\\Users\\xx\\source\\repos\\ToDo Manager\\ToDo Manager\\ressources\\game-icon.png");
-                image.EndInit();
-
-                backGroundBrush.ImageSource = image;
-
                 LoginWindow loginWindow = new LoginWindow();
-                loginWindow.Background = backGroundBrush;
+                loginWindow.loginEnterButton.IsEnabled = false;
+                loginWindow.registerbutton.IsEnabled = false;
+
                 loginWindow.pwLabel.Visibility = Visibility.Collapsed;
                 loginWindow.pwBox.Visibility = Visibility.Collapsed;
                 loginWindow.loginEnterButton.Visibility = Visibility.Collapsed;
                 loginWindow.registerbutton.Visibility = Visibility.Collapsed;
                 loginWindow.enterRect.Visibility = Visibility.Collapsed;
+                loginWindow.pwBoxBorder.Visibility = Visibility.Collapsed;
                 loginWindow.hoI_IV_Icon.Visibility = Visibility.Visible;
+
                 loginWindow.Show();
 
-                Thread.Sleep(3000);
-                //obiger block funktioniert nicht richtig, es wird ein blankes login fenster geladen ohne bildhintergrund,
-                //dann folgt Main-Fenster und dann wird im hintergrund erst ein weiters login-fenster geöffnet mit den obigen code-änderungen
+                this.Close();
+
+                await Task.Delay(3000);
 
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
 
             }
+            else if (pwBox.Password == "")
+            {
+                MessageBox.Show("No password given!");
+            }
             else
             {
-                MessageBox.Show("Wrong Password!");
+                pwBox.Password = "";
+                MessageBox.Show("Wrong password!");
             }
         }
 
         private void registerbutton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Implement Account Management\nImplement Database");//db connection and account mngmt
+            MessageBox.Show("Implement account management\nImplement database");//db connection and account mngmt
         }
     }
 }
